@@ -265,7 +265,7 @@ a:hover {
 }
 
 .casino_list_container {
-
+	padding: 50px 0 30px;
 	.casino_list_item {
 		display: flex;
 		width: 100%;
@@ -273,10 +273,9 @@ a:hover {
 		border-radius: 16px;
 		border: 1px solid #E5E5E5;
 		background: #fff;
-
-		&:not(:last-child){
-			margin-bottom: 20px;
-		}
+		align-items: center;
+		margin-bottom: 20px;
+		
 	}
 
 	.casino_list_logo {
@@ -286,6 +285,7 @@ a:hover {
 		flex: 0 0 200px;
 		border-radius: 10px;
 		overflow: hidden;
+		background: green;
 
 		a {
 
@@ -307,8 +307,98 @@ a:hover {
 
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+   		 max-width: 340px;
+   		 margin: 0 15px;
 
-		
+		 * {
+		 	font-family: "Roboto";
+		 	color: #2C3E50;
+		 }
+		 .bold_title {
+		 	font-size: 32px;
+		 	font-weight: bold;
+		 }
 	}
 
+	.casino_list_li {
+		flex-grow: 1;
+		li {
+			svg {
+				margin-right: 7px;
+			}
+
+			span {
+				font-size: 14px;
+				font-family: "Roboto";
+		 		color: #2C3E50;
+			}
+		}
+	}
+
+	.casino_list_button {
+
+		a {
+
+			background: #27AE60;
+			border-radius: 15px;
+			padding: 7px 14px;
+			display: flex;
+			align-items: center;
+			color: #fff;
+
+			svg {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.star_review {
+		text-align: center;
+		font-size: 14px;
+		color: #2C3E50;
+	}
+
+	.casino_list_title {
+		font-size: 28px;
+		color: #2C3E50;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 25px;
+  height: 35px;
+  overflow: hidden;
+  width: 130px;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 #a2a2a2;
+
+  .star-ratings-css-top {
+    color: #ffe300;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .star-ratings-css-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
 }

@@ -51,4 +51,12 @@ document.querySelectorAll('.js-back').forEach(async (target) => {
 
 	})
 
+
+	$(".rev_stars .star-ratings-css").each(function(index){
+    var dataRating = $(this).find(".star-ratings-css-top").attr("data-rating") / 5 * 100 + "%"
+    $(this).find(".star-ratings-css-top").css("width",dataRating)
+
+  })
+
+
 })

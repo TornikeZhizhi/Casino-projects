@@ -59,4 +59,14 @@ document.querySelectorAll('.js-back').forEach(async (target) => {
   })
 
 
+
+
+	$('.casino_slider').slick({
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 3,
+	  centerPadding: '50px',
+	  dots: true,
+});
+
 })

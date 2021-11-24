@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="georgia-2" transform="translate(0.521 0.5)">
+    <circle id="Oval" cx="12" cy="12" r="12" transform="translate(-0.021)" fill="#fff" stroke="#dfdfdf" stroke-miterlimit="10" stroke-width="1"/>
+    <g id="Group">
+      <path id="Path" d="M23.7,10.347H13.452V.1a12.009,12.009,0,0,0-3.1,0V10.347H.1a12.009,12.009,0,0,0,0,3.1H10.347V23.7a12.009,12.009,0,0,0,3.1,0V13.452H23.7a12.009,12.009,0,0,0,0-3.1Z" fill="#d80027"/>
+      <path id="Path-2" data-name="Path" d="M3.1,1.552V0H1.552V1.552H0V3.1H1.552V4.656H3.1V3.1H4.656V1.552Z" transform="translate(4.139 4.139)" fill="#d80027"/>
+      <path id="Path-3" data-name="Path" d="M3.1,1.552V0H1.552V1.552H0V3.1H1.552V4.656H3.1V3.1H4.656V1.552Z" transform="translate(15.004 4.139)" fill="#d80027"/>
+      <path id="Path-4" data-name="Path" d="M3.1,1.552V0H1.552V1.552H0V3.1H1.552V4.656H3.1V3.1H4.656V1.552Z" transform="translate(4.139 15.004)" fill="#d80027"/>
+      <path id="Path-5" data-name="Path" d="M3.1,1.552V0H1.552V1.552H0V3.1H1.552V4.656H3.1V3.1H4.656V1.552Z" transform="translate(15.004 15.004)" fill="#d80027"/>
+    </g>
+  </g>
+</svg>

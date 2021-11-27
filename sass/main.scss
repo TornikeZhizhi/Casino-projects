@@ -945,7 +945,7 @@ footer {
 					.blog_title {
 
 						a {
-							
+
 						color: #5642EC !important;
 						}
 					}
@@ -1008,40 +1008,7 @@ footer {
 					}
 				}
 
-				.blog_header_info_fluid {
-					display: flex;
-
-					.blog_header_info {
-						display: flex;
-						align-items: center;
-						position: relative;
-
-						* {
-							color: #2C3E50;
-							opacity: 0.7;
-							font-family: 'Roboto'
-						}
-
-						svg {
-							margin-right: 5px;
-						}
-						&:not(:last-child){
-							margin-right: 40px;
-
-
-							&:after{
-
-								position:absolute;
-								content: "";
-							    height: 19px;
-							    width: 1px;
-							    top: 4px;
-							    right: -18px;
-								background-color: #707070;
-							}
-						}
-					}
-				}
+				
 			}
 
 			.blog_img {
@@ -1136,7 +1103,11 @@ footer {
 				}
 			}
 
-			.search_fluid {
+			
+		}
+	}
+}
+.search_fluid {
 				width: 100%;
 				height: 120px;
 				border:1px solid #E5E5E5;
@@ -1144,6 +1115,35 @@ footer {
 				display: flex;
 				align-items: center;
 				justify-content: center;
+
+				&.subscribe_search {
+
+					max-width: 536px;
+					margin: 0 auto;
+					border: unset !important;
+
+					form{
+						max-width: 100% !important;
+					}
+
+					button,a {
+						width: 102px !important;
+						height: 38px !important;
+						color: #fff;
+						border-radius: 25px !important;
+						top: 6px !important;
+    					right: 6px !important;
+    					display: flex;
+					    align-items: center;
+					    justify-content: center;
+					    		background-color: #5642EC;
+					    		position: absolute;
+					}
+
+					input {
+						height: 50px !important;
+					}
+				}
 
 				form {
 					position: relative;
@@ -1176,13 +1176,44 @@ footer {
 						top: 4px;
    						 right: 6px;
    						 cursor: pointer;
+
 					}
 				}
 			}
-		}
-	}
-}
+.blog_header_info_fluid {
+					display: flex;
 
+					.blog_header_info {
+						display: flex;
+						align-items: center;
+						position: relative;
+
+						* {
+							color: #2C3E50;
+							opacity: 0.7;
+							font-family: 'Roboto'
+						}
+
+						svg {
+							margin-right: 5px;
+						}
+						&:not(:last-child){
+							margin-right: 40px;
+
+
+							&:after{
+
+								position:absolute;
+								content: "";
+							    height: 19px;
+							    width: 1px;
+							    top: 4px;
+							    right: -18px;
+								background-color: #707070;
+							}
+						}
+					}
+				}
 .common_pagination{
 
 	display: flex;
@@ -1207,3 +1238,248 @@ footer {
 	}
 }
 
+.blog_inner_fluid {
+	padding: 20px 0 100px;
+}
+
+.blog_inner_header {
+height: 264px;
+background-image:
+ linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0.7)), url("../images/bloginner.jpg");
+     background-size: cover;
+    background-position: center;
+&:before{
+	content:unset !important;
+}
+
+
+	.common_header_body {
+		.blog_header_info_fluid {
+			background-color: rgba(0,0,0,.9);
+			border-radius: 15px;
+    		padding: 7px 10px;
+    		margin-top: 30px;
+    		.blog_header_info {
+
+    			&:after{
+    				top: 1px !important;
+    			}
+    		}
+
+    		span {
+    			color: #BCBBBA !important;
+    		}
+
+    		svg,path {
+    			fill: #BCBBBA !important;
+    		}
+		}
+
+		.title {
+			font-size: 28px;
+			color: #fff;
+			max-width: 720px;
+			margin: 0 auto;
+			    line-height: 36px;
+		}
+	}
+}
+
+.blog_inner_container {
+	max-width: 720px;
+	margin: 0 auto;
+
+	.blog_inner_img {
+		width: 100%;
+		height: 420px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.blog_inner_text {
+
+		h5,.title {
+			font-size: 20px;
+			color: #2C3E50;
+			margin: 20px 0;
+		}
+
+		p,span {
+			color: #2C3E50;
+			font-family: 'Roboto';
+		}
+	}
+
+	.blog_banner {
+			width: 100%;
+			height: 150px;
+			border-radius: 8px;
+			overflow: hidden;
+			margin: 30px 0;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+
+		}
+}
+
+
+.top_common_story_fluid{
+
+	background-color: #5642EC;
+	background-image: url("../img/story_bg.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	width: 100%;
+	padding: 60px 10px;
+
+	.top_story_container {
+		display: flex;
+		justify-content: space-between;
+
+		&>div {
+			flex: 0 0 30%;
+			max-width: 30%;
+
+		}
+
+		.story_box_wrapper {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+
+			.story_img {
+				width: 100%;
+				height: 182px;
+				border-radius: 10px;
+				overflow: hidden;
+				a {
+					width: 100%;
+					height: 100%;
+					display: block;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+
+			.blog_header_info {
+				display: flex;
+				align-items: center;
+				margin: 18px 0 8px;
+				svg {
+					margin-right: 10px;
+				}
+
+				*, path {
+					color: #969FA8;
+					fill: #969FA8;
+				}
+			}
+
+			.story_text {
+				line-height: 20px;
+
+				* {
+
+				color: #2C3E50;
+				}
+			}
+		}
+	}
+}
+
+.common_title {
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+.classic_list{
+	margin-top: 35px;
+
+	.title {
+		font-size: 32px;
+		color: #2C3E50;
+	}
+
+
+	ul {
+		margin-top: 5px;
+		padding-left: 30px;
+
+		li {
+			margin-bottom: 15px;
+			position: relative;
+
+			&:after{
+
+				    position: absolute;
+				    content: "";
+				    left: -29px;
+				    top: 5px;
+				    background-image: url(../images/list.svg);
+				    width: 15px;
+				    height: 15px;
+				    background-position: center;
+				    background-repeat: no-repeat;
+				    background-size: contain
+			}
+		}
+	}
+}
+
+
+.subscribe_fluid {
+
+	margin: 40px 0 80px;
+
+	.subscribe_container{
+		background-image: url("../images/sub_bg.svg"),linear-gradient(#E5E2FF,#E5E2FF);
+		border-radius: 50px;
+		overflow: hidden;
+		padding: 30px 0;
+		.subscribe_title{
+			text-align: center;
+			color: #000;
+			font-size: 40px;
+
+		}
+
+		.subscribe_text {	
+			max-width: 720px;
+			text-align: center;
+			margin: 16px auto 9px;
+			* {
+				color: #2C3E50;
+			}
+		}
+
+		.sunbscribe_footer {
+			max-width: 720px;
+			margin: 0 auto;
+			text-align: justify;
+			text-align-last: center;
+
+			* {
+				color: #2C3E50;
+				font-family: "Roboto";
+				font-size: 14px;
+			}
+			a {
+				color: #5642EC;
+				text-decoration: underline;
+			}
+		}
+	}
+}

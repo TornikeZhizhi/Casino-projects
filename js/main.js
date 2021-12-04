@@ -89,9 +89,29 @@ document.querySelectorAll('.js-back').forEach(async (target) => {
 	$('.casino_slider').slick({
 	  infinite: true,
 	  slidesToShow: 3,
-	  slidesToScroll: 3,
+	  slidesToScroll: 1,
 	  centerPadding: '50px',
 	  dots: true,
+
+
+        responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow:1,
+                slidesToScroll: 1,
+            }
+        },
+    
+        {
+            breakpoint: 310,
+            settings: {
+                slidesToShow:1,
+                slidesToScroll: 1
+            }
+        }
+
+  ]
 });
 
 
@@ -161,7 +181,7 @@ var swiper = new Swiper('.swiper', {
   centeredSlides: true,
   loop: true,
   spaceBetween: 20,
-  speed: 800,
+  speed: 1000,
 
   autoplay: {
           delay: 2000,
@@ -178,13 +198,52 @@ var swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+    breakpoints: {
+      
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+        },
 });
 
 
-swiper.on('transitionStart', function() {
-  $(".swiper_progress").removeClass("test");
-  $(".swiper_progress").addClass("test");
+swiper.on('activeIndexChange', function() {
+  $(".swiper_progress").removeClass("test1");
+  setTimeout(() => {
+    $(".swiper_progress").addClass("test1");
+  }, 10)
 });
 
+
+
+$(".nav-container").click(function(){
+
+	$(".header .header_right").slideToggle()
+})
+
+
+
+
+
+$(".scrop_top").click(function(event) {
+      
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+
+
+$(".payment_header .toggler").click(function() {
+  
+  $(this).parent().toggleClass('toggle')
+
+})
 
 });

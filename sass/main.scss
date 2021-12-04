@@ -55,6 +55,10 @@ a:hover {
 	  font-family: 'Kanit';
 }
 
+body.overflow {
+	overflow: hidden;
+}
+
 
 .common_container {
 	max-width: 1088px;
@@ -281,6 +285,15 @@ a:hover {
     		bottom: 0;
     		a {
     			border-radius: 20px;
+    			background-color: #2ECC71;
+
+    			span {
+    				color: #fff;
+    			}
+
+    			path {
+    				fill: #fff;
+    			}
     		}
     	}
     .item_center_title {
@@ -457,6 +470,11 @@ a:hover {
 		background: #fff;
 		align-items: center;
 		margin-bottom: 20px;
+
+		.rev_stars {
+			display: flex;
+			justify-content: center;
+		}
 		
 	}
 
@@ -1548,6 +1566,7 @@ background-image:
 			img {
 				width: 100%;
 				height: 100%;
+				object-fit: cover;
 			}
 
 		}
@@ -1764,7 +1783,7 @@ background-image:
 			justify-content: center;
 			color: #5642EC;
 			border: 1px solid #5642EC;
-			padding: 4px 8px;
+			padding: 4px 10px;
 			transition: all .4s;
 
 			&:hover{
@@ -2683,6 +2702,8 @@ textarea {
     margin-right: 1%;
     object-fit: contain;
 }
+
+
 .games_fluid ~ .long_text_fluid  {
 	background-color: #F4F4F4 !important;
 
@@ -3064,7 +3085,7 @@ textarea {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background: #fff;
     top: 86px;
     z-index: 1000;
@@ -3319,8 +3340,8 @@ textarea {
     margin: 15px 0px;
     text-align: center;
 }
-.casino_list_links {
-	display: flex;
+.casino_list_item .casino_list_links {
+	display: flex !important;
     justify-content: space-between;
     margin-top: 14px;
     align-items: flex-start;
@@ -3359,8 +3380,8 @@ textarea {
 }
 
 
-.casino_list_links {
-	display: block;
+.casino_slider_container  .casino_list_links {
+	display: block !important; 
 }
 
 .casino_slider_fluid .casino_list_item .casino_list_center {
@@ -3502,6 +3523,11 @@ font-size: 14px;
 
 .blog_inner_header {
 	height: 254px;
+
+	&:after {
+		content: "";
+   		 width: 187%;
+	}
 }
 
 

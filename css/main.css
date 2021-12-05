@@ -749,7 +749,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    z-index: 1000; }
     .common_header .common_header_body .title {
       font-size: 40px;
       color: #5642EC; }
@@ -1408,9 +1410,12 @@ textarea {
   100% {
     width: 100%; } }
 .casino_inner_header {
-  height: auto; }
+  height: auto;
+  /*&:after{
+  	content:unset;
+  }*/ }
   .casino_inner_header:after {
-    content: unset; }
+    height: 323px; }
   .casino_inner_header .casino_inner_main_header {
     display: flex;
     align-items: flex-end;
@@ -1493,7 +1498,8 @@ textarea {
       border-radius: 10px;
       padding: 20px;
       background-color: #fff;
-      margin-top: 20px; }
+      margin-top: 20px;
+      border: 1px solid #E5E5E5; }
       .casino_inner_body .body_left .payment_method_container .logo_container {
         display: flex;
         justify-content: flex-start;
@@ -1549,7 +1555,8 @@ textarea {
         max-width: 47%;
         border-radius: 10px;
         padding: 20px;
-        background-color: #fff; }
+        background-color: #fff;
+        border: 1px solid #E5E5E5; }
         .casino_inner_body .body_left .limits_fluid > div .title {
           color: #2C3E50;
           font-size: 20px;
@@ -1568,7 +1575,7 @@ textarea {
     height: 465vw;
     transform: rotate(-12deg); }
   .casino_inner_fluid:after {
-    content: "";
+    /*content:"";*/
     position: absolute;
     top: 0;
     left: 0;
@@ -1590,7 +1597,6 @@ textarea {
     padding: 0 !important; }
 
 .games_fluid {
-  margin: 50px 0 0px;
   background-image: linear-gradient(to right, #E1DEFD, #988CFE);
   padding: 50px 10px; }
   .games_fluid .games_links_wrapper {
@@ -1782,6 +1788,9 @@ textarea {
 .common_pagination.mobile {
   display: none; }
 
+@media screen and (min-width: 992px) {
+  .casino_inner_fluid:before {
+    content: unset; } }
 @media screen and (max-width: 992px) {
   .casino_inner_body .body_left .payment_method_container .logo_container img {
     flex: 0 0 30%;
@@ -1790,12 +1799,21 @@ textarea {
     margin-right: 1%;
     object-fit: contain; }
 
+  .casino_inner_header:after {
+    height: 247px !important;
+    background-color: #e5e2ff;
+    bottom: -107px !important;
+    width: 100% !important; }
+
   .games_fluid ~ .long_text_fluid {
-    background-color: #F4F4F4 !important; }
-    .games_fluid ~ .long_text_fluid ~ div {
-      background-color: #F4F4F4 !important; }
-      .games_fluid ~ .long_text_fluid ~ div ~ div {
-        background-color: #F4F4F4 !important; }
+    background-color: #F4F4F4 !important;
+    /*& ~ div {*/
+    background-color: #F4F4F4 !important;
+    /*	& ~ div {
+    background-color: #F4F4F4 !important;
+    	
+    }*/
+    /*}*/ }
 
   .user_reviews_fluid .title {
     font-size: 25px;
@@ -1811,6 +1829,10 @@ textarea {
     display: none; }
 
   .casino_inner_fluid {
+    background-color: #F4F4F4;
+    padding-bottom: 40px; }
+
+  .list_fluid, .review_fluid, .user_reviews_fluid {
     background-color: #F4F4F4; }
 
   .casino_inner_fluid:before {

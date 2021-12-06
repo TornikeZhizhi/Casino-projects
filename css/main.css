@@ -1468,7 +1468,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; }
+    position: relative;
+    box-shadow: 0px 0px 8px 4px #00000014; }
     .casino_inner_header .casino_inner_main_logo .top_star {
       top: unset;
       bottom: -9px;
@@ -1478,6 +1479,9 @@ textarea {
       height: 100%;
       object-fit: contain; }
 
+.casino_inner_header .common_container {
+  padding-bottom: 10px; }
+
 .body_right {
   flex: 0 0 345px;
   max-width: 345px;
@@ -1485,7 +1489,7 @@ textarea {
   .body_right .casino_right_cotent {
     border-radius: 10px 50px 10px 10px;
     background-color: #fff;
-    box-shadow: 0px 0px 8px 4px #0000001a;
+    box-shadow: 0px 0px 8px 4px #00000014;
     padding: 16px 16px 90px 16px;
     position: relative; }
     .body_right .casino_right_cotent .casino_right_bg {
@@ -1523,8 +1527,8 @@ textarea {
 
 .body_right_wrapper {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: -55px;
+  left: 990px;
   height: 100%;
   z-index: 100; }
 

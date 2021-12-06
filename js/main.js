@@ -31,6 +31,14 @@ document.querySelectorAll('.js-back').forEach(async (target) => {
 
 
 
+if ($(".casino_inner_header").length > 0) {
+
+  $("body").css("overflow-x","hidden");
+}
+
+
+
+
 	$(document).click(function(argument) {
 		
 		$(".language_body").slideUp(250);
@@ -60,27 +68,41 @@ document.querySelectorAll('.js-back').forEach(async (target) => {
 
 
 
-	$(".contact_form input").focus(function(){
+	$(".contact_form input, .contact_form textarea").focus(function(){
 
 		$(".label_img").removeClass("active")
-		$(this).next().next().addClass("active")
+		$(this).next().next().addClass("active");
+    $(".contact_form input").removeClass("shadow");
+    $(".contact_form textarea").removeClass("shadow");
+    $(this).addClass("shadow");
 	})
 
 	$(".contact_form input").blur(function(){
-		$(".label_img").removeClass("active")
+		$(".label_img").removeClass("active");
+
+      $(".contact_form input").removeClass("shadow");
+    $(".contact_form textarea").removeClass("shadow");
+    $(".contact_form input").removeClass("shadow")
 
 
 	})
 
 
-	$(".review_container input").focus(function(){
+	$(".review_container input, .review_container textarea").focus(function(){
 
 		$(".label_img").removeClass("active")
 		$(this).next().next().addClass("active")
+
+    $(".review_container input").removeClass("border")
+    $(".review_container textarea").removeClass("border")
+    $(this).addClass("border")
+
 	})
 	$(".review_container input").blur(function(){
 		$(".label_img").removeClass("active")
 
+    $(".review_container input").removeClass("border")
+    $(".review_container textarea").removeClass("border")
 
 	})
 

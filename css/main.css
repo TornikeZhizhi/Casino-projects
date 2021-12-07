@@ -124,7 +124,10 @@ body.overflow {
         .header .header_right nav ul li:not(:last-child) {
           margin-right: 45px; }
         .header .header_right nav ul li a {
-          color: #2C3E50; }
+          color: #2C3E50;
+          transition: all .4s; }
+          .header .header_right nav ul li a:hover {
+            color: #5642EC; }
 
 .main_section {
   width: 100%;
@@ -2262,7 +2265,8 @@ textarea {
     color: #0e2431;
     font-weight: 500;
     font-size: 1.2rem;
-    padding: 0.7rem; }
+    padding: 0.7rem;
+    transition: all .4s; }
 
   .navbar .nav-container a:hover {
     font-weight: bolder; }

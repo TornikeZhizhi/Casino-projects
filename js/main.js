@@ -29,6 +29,7 @@ document.querySelectorAll('.js-back').forEach(async (target) => {
 });
 
 
+ 
 
 
 if ($(".casino_inner_header").length > 0) {
@@ -210,6 +211,6 @@ $(".payment_header .toggler").click(function() {
 
 })
 
-
+ AOS.init();
 
 });

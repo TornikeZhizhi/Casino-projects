@@ -186,6 +186,11 @@ body.overflow {
 					}
 					a {
 						color: #2C3E50;
+						transition: all .4s;
+
+						&:hover{
+							color:#5642EC;
+						}
 					}
 				}
 			}
@@ -3305,6 +3310,9 @@ textarea {
   font-weight: 500;
   font-size: 1.2rem;
   padding: 0.7rem;
+  transition: all .4s;
+
+
 }
 
 .navbar .nav-container a:hover{

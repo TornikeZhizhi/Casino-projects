@@ -2231,9 +2231,16 @@ textarea {
 }
 
 .body_right {
-		flex:0 0 345px;
-		max-width: 345px;
-		margin-left: 20px;
+		    flex: 0 0 354px;
+    max-width: 354px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 354px;
+
+
+
+
+
 
 		.casino_right_cotent {
 			border-radius: 10px 50px 10px 10px;
@@ -2246,18 +2253,19 @@ textarea {
 				bottom: -5px;
 				left: 50%;
 				transform: translateX(-50%);
+				z-index: 1000;
 			}
 				.casino_right_tab {
 
-					width: 100%;
-					border-radius: 16px 60px 16px 16px;
-					border: 1px solid #DCDCDC;
-					padding: 25px 15px 35px;
-					position: relative;
+						width: 100%;
+					    border-radius: 16px 60px 16px 16px;
+					    padding: 3px 3px 3px 3px;
+					    position: relative;
+					    overflow: hidden;
 
 					&:after{
 						background-image: url("../images/lines_bg.svg");
-						content: "";
+						/*content: "";*/
 						width: 100%;
 						height: 100%;
 						background-size: 100% 100%;
@@ -2291,14 +2299,14 @@ textarea {
 .body_right_wrapper {
 	position: absolute;
     top: -55px;
-    left:990px;
+    left:calc((100vw - 1080px) / 2 + 706px);
     height: 100%;
     z-index: 100;
 }
 
 .casino_page_container{
 
-	 max-width: 760px;
+	 max-width: 685px;
     margin: 0; 
     width: 100%;
 }
@@ -2830,6 +2838,9 @@ textarea {
 	padding-top: 355px;
 }
 .body_right {
+	    flex: 0 0 100%;
+    max-width: 354px;
+    width: 100%;
 	position: relative;
 }
 .casino_inner_header:after {
@@ -2908,7 +2919,7 @@ textarea {
 
 
 .body_right .casino_right_cotent .casino_right_tab {
-	    padding: 25px 15px 25px;
+	    padding: 3px;
 }
 
 .user_reviews_fluid {
@@ -3708,3 +3719,147 @@ font-size: 14px;
 		border-color: #5642EC;
 	}
 }
+
+
+
+
+
+.ranbow_wrapper {
+	width: 100%;
+    height: 100%;
+    /* opacity: 0; */
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    border-radius: 16px 60px 16px 16px;
+    padding: 36px 8px;
+}
+
+.casino_right_cotent>div:nth-child(2){
+	.rainbow {
+
+		animation-delay: 0.5s !important;
+		animation-duration: 10s !important;
+	}
+}
+
+.rainbow {
+     width: 100%;
+    height: 100%;
+    -webkit-animation: o-rotate-360 linear 8s infinite;
+    animation: o-rotate-360 linear 8s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rainbow span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+}
+.rainbow span:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 100%;
+   transition: all 1s;
+}
+.rainbow span:first-child {
+  background: #5642EC;
+}
+.rainbow span:first-child:after {
+  background: #DCDCDC;
+}
+.rainbow span:last-child {
+  background: #DCDCDC;
+}
+.rainbow span:last-child:after {
+  background: #5642EC;
+}
+
+.c-subscribe-box {
+  width: var(--block-width);
+  height: var(--block-height);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+  border-radius: var(--border-radius-outer);
+}
+.c-subscribe-box__wrapper {
+  width: calc(100% - var(--border-width));
+  height: calc(100% - var(--border-width));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 1.2rem 1rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-inner);
+}
+.c-subscribe-box__title {
+  font-size: 1.6rem;
+}
+.c-subscribe-box__desc {
+  font-size: 0.935rem;
+  margin: 0.7rem auto 1.8rem;
+  max-width: 240px;
+}
+.c-subscribe-box__form {
+  margin-top: auto;
+}
+
+.c-form--accent input:hover, .c-form--accent input:active, .c-form--accent input:focus {
+  border-color: var(--color-third);
+  box-shadow: 0 0 0 3px rgba(232, 94, 152, 0.25);
+}
+.c-form--accent [type=submit] {
+  background: var(--color-third);
+  border-color: var(--color-third);
+  color: #fff;
+}
+
+@-webkit-keyframes o-rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes o-rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.casino_right_tab{
+
+	&:hover{
+
+		.rainbow {
+
+			span {
+
+				&:last-child{
+				background: #5642EC;
+				transform:translate(-50%,-50%) scale(3);
+				}
+			}
+		}
+	}
+}
+
+
+

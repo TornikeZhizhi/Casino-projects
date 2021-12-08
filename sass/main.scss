@@ -416,6 +416,7 @@ body.overflow {
 
 			    font-family: 'Roboto';
 			    color: #2C3E50;
+			    line-height: 24px;
 			}
 		}
 
@@ -507,10 +508,23 @@ body.overflow {
 		background: #fff;
 		align-items: center;
 		margin-bottom: 20px;
-
+		transition: all .5s;
 		.rev_stars {
 			display: flex;
 			justify-content: center;
+		}
+
+		&:hover{
+
+			box-shadow: 0 0 13px 5px #00000029;
+
+			.casino_list_logo {
+
+				img {
+					transform: scale(1.2);
+				}
+				
+			}
 		}
 		
 	}
@@ -530,10 +544,12 @@ body.overflow {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			overflow: hidden;
 			img {	
 				width: 100%;
 				height: 100%;
 				object-fit: contain;
+				transition: all .5s;
 			}
 		}
 
@@ -712,6 +728,7 @@ body.overflow {
 			color: #2C3E50;
 			font-size: 16px;
 			font-family: "Roboto";
+			line-height: 24px;
 
 		}
 
@@ -996,6 +1013,7 @@ footer {
 			&:nth-child(1){
 			 	width: 60%;
 			 	padding-right: 45px;
+			 	line-height: 24px;
 
 			}
 			&:nth-child(2){
@@ -1124,6 +1142,10 @@ footer {
     	background-color: #C8C2FB;
     	content: "";
     	z-index: 10;
+    	animation-name: s_cloudAnime;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
     }
 
 
@@ -1581,7 +1603,7 @@ background-image:
 	}
 
 	.blog_inner_text {
-
+		line-height: 24px;
 		h5,.title {
 			font-size: 20px;
 			color: #2C3E50;
@@ -1767,7 +1789,7 @@ background-image:
 
 .body_right {
 	position: sticky;
-	top: 0;
+	top: 30px;
 	left: 0;
 }
 .error_fluid {
@@ -2264,7 +2286,7 @@ textarea {
 
 						width: 100%;
 					    border-radius: 16px 60px 16px 16px;
-					    padding: 3px 3px 3px 3px;
+					    padding: 2px 2px 2px 2px;
 					    position: relative;
 					    overflow: hidden;
 
@@ -3674,6 +3696,7 @@ footer .scrop_top {
     background-color: #C8C2FB;
     content: "";
     z-index: 10;
+
 }
 
 .common_header {
@@ -3747,15 +3770,15 @@ font-size: 14px;
 	.rainbow {
 
 		animation-delay: 0.5s !important;
-		animation-duration: 10s !important;
+		animation-duration: 12s !important;
 	}
 }
 
 .rainbow {
      width: 100%;
     height: 100%;
-    -webkit-animation: o-rotate-360 linear 8s infinite;
-    animation: o-rotate-360 linear 8s infinite;
+    -webkit-animation: o-rotate-360 linear 11s infinite;
+    animation: o-rotate-360 linear 11s infinite;
     position: absolute;
     top: 0;
     left: 0;

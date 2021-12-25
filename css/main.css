@@ -499,6 +499,8 @@ body.overflow {
       font-size: 16px;
       font-family: "Roboto";
       line-height: 24px; }
+    .long_text_fluid .long_text_paragraph p {
+      margin-bottom: 15px; }
     .long_text_fluid .long_text_paragraph h1, .long_text_fluid .long_text_paragraph h2, .long_text_fluid .long_text_paragraph h3, .long_text_fluid .long_text_paragraph h4, .long_text_fluid .long_text_paragraph h5, .long_text_fluid .long_text_paragraph h6 {
       /*text-align: center;*/
       color: #2C3E50;
@@ -1538,7 +1540,7 @@ textarea {
     .body_right .casino_right_cotent .casino_right_tab {
       width: 100%;
       border-radius: 16px 60px 16px 16px;
-      padding: 2px 2px 2px 2px;
+      padding: 1px 1px 1px 1px;
       position: relative;
       overflow: hidden; }
       .body_right .casino_right_cotent .casino_right_tab:after {
@@ -1865,7 +1867,8 @@ textarea {
       .user_reviews_container .user_review_left .user_img img {
         width: 95%;
         height: 95%;
-        object-fit: contain; }
+        object-fit: contain;
+        border-radius: 50%; }
   .user_reviews_container .user_review_right {
     flex-grow: 1;
     padding: 30px 80px 45px 100px; }

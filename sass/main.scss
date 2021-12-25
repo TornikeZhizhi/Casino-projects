@@ -743,6 +743,10 @@ body.overflow {
 
 		}
 
+		p {
+			margin-bottom: 15px;
+		}
+
 		h1,h2,h3,h4,h5,h6 {
 			/*text-align: center;*/
 			color: #2C3E50;
@@ -2308,7 +2312,7 @@ textarea {
 
 						width: 100%;
 					    border-radius: 16px 60px 16px 16px;
-					    padding: 2px 2px 2px 2px;
+					    padding: 1px 1px 1px 1px;
 					    position: relative;
 					    overflow: hidden;
 
@@ -2793,6 +2797,7 @@ textarea {
 				 	width: 95%;
 				 	height: 95%;
 				 	object-fit: contain;
+				 	border-radius: 50%;
 				 }
 			}
 	}

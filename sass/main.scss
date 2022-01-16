@@ -632,7 +632,7 @@ body.overflow {
 			display: flex;
 			align-items: center;
 			color: #fff;
-			border: 1px solid #27AE60;
+			border: 2px solid #27AE60;
 			transition:all .3s;
 			svg {
 				margin-right: 10px;
@@ -654,6 +654,7 @@ body.overflow {
 			&:hover{
 
 				background: #27AE60;
+				border-color: #228a4e;
 
 				span {
 					color: #fff;
@@ -798,6 +799,11 @@ body.overflow {
 				width: 24px;
 				height: 24px;
 				flex: 0 0 24px;
+
+				&:last-child{
+					transform:translateY(-12px);
+				}
+
 				&:first-child {
 					margin-bottom:5px;
 				}
@@ -967,9 +973,9 @@ footer {
 	.scrop_top {
 
 		position: absolute;
-		bottom: 10%;
+		bottom: -25px;
 		z-index: 1000;
-		right: 10%;
+		right: 7%;
 		cursor: pointer;
 		    -webkit-animation: scroltop 4s infinite linear;
     animation: scroltop 4s infinite linear;
@@ -1661,7 +1667,7 @@ background-image:
 .top_common_story_fluid{
 
 	background-color: #5642EC;
-	background-image: url("../img/story_bg.png");
+	background-image: url("../images/top_bg.png"),url("../images/story_bg.png");
 	background-repeat: no-repeat;
 	background-position: right;
 	width: 100%;
@@ -3907,10 +3913,7 @@ font-size: 14px;
 }
 
 
-.casino_right_tab{
-
-	&:hover{
-
+.casino_right_tab:hover{
 		.rainbow {
 
 			span {
@@ -3921,7 +3924,6 @@ font-size: 14px;
 				}
 			}
 		}
-	}
 }
 
 

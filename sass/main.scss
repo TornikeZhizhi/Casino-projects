@@ -459,7 +459,7 @@ body.overflow {
 	    left: -130px;
 	    z-index: -1;
 	    animation-name: s_cloudAnime;
-	    animation-duration: 10s;
+	    animation-duration: 15s;
 	    animation-direction: alternate-reverse;
 	    animation-iteration-count: infinite
 	}
@@ -475,7 +475,7 @@ body.overflow {
 	    right: -22%;
 	    z-index: -1;
 	        animation-name: b_cloudAnime;
-    animation-duration: 9s;
+    animation-duration: 14s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
 	}
@@ -519,7 +519,7 @@ body.overflow {
 		background: #fff;
 		align-items: center;
 		margin-bottom: 20px;
-		transition: all .5s;
+		transition: all .4s !important;
 		.rev_stars {
 			display: flex;
 			justify-content: center;
@@ -527,7 +527,7 @@ body.overflow {
 
 		&:hover{
 
-			box-shadow: 0 0 13px 5px #00000029;
+			box-shadow:0 0 15px 2px #00000021;
 
 			.casino_list_logo {
 
@@ -788,7 +788,7 @@ body.overflow {
 	.casino_list_item {
 		padding: 15px 0;
 		.casino_list_center {
-			margin: 0 50px 0 20px;
+			margin: 0 15px 0 15px;
 		}
 
 		.casino_list_flags {
@@ -828,7 +828,7 @@ body.overflow {
 			transition: all .3s;
 
 			&:hover{
-				box-shadow: 0px 0px 13px 2px #00000036;
+				box-shadow: 0px 0px 13px 1px #0000001c;
 			}
 
 			.casino_list_item_title {
@@ -949,7 +949,7 @@ body.overflow {
 .link_tabs_container {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 30px 10px 70px;
+	padding: 30px 10px 50px;
 
 	a {
 		margin-right: 10px;
@@ -1017,6 +1017,7 @@ footer {
 					font-family: "Roboto";
 					position: relative;
 					margin-left: 10px;
+					white-space: nowrap;
 					&:after{
 						content:"";
 						position: absolute;
@@ -1523,7 +1524,7 @@ footer {
 
 						* {
 							color: #2C3E50;
-							opacity: 0.7;
+							opacity: 1;
 							font-family: 'Roboto'
 						}
 
@@ -1578,7 +1579,7 @@ footer {
 .blog_inner_header {
 height: 315px;
 background-image:
- linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0.7)), url("../images/bloginner.jpg");
+ linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,0.66)), url("../images/bloginner.jpg");
      background-size: cover;
     background-position: center;
 &:before{
@@ -2401,8 +2402,8 @@ textarea {
 					img {
 						flex:0 0 15%;
 						max-width: 15%;
-						height: 57px;
-				    	margin-right: 1%;
+						height: 46px;
+				    	margin-right: 2%;
 						object-fit: contain;
 					}
 				}
@@ -2667,7 +2668,7 @@ textarea {
 	.list_container {
 		border-radius: 13px;
 	padding: 20px 30px 25px 38px;
-	margin-right: 1%;
+	margin-right: 16px;
 
 		&.green {
 			background-color: #E8F5E9;
@@ -3928,3 +3929,14 @@ font-size: 14px;
 
 
 
+.common_banner {
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+	img {
+
+		width: 100%;
+		object-fit: cover;
+		max-height: 400px;
+	}
+}

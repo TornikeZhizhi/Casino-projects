@@ -145,7 +145,7 @@ var swiper = new Swiper('.swiper', {
   centeredSlides: true,
   loop: true,
   spaceBetween: 20,
-  speed: 1000,
+  speed: 800,
 
   autoplay: {
           delay: 2000,
@@ -166,12 +166,12 @@ var swiper = new Swiper('.swiper', {
       
           992: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 16,
           },
 
           320: {
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 16,
           },
         },
 });

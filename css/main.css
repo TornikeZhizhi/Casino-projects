@@ -134,6 +134,31 @@ body.overflow {
   text-align: center;
   margin-bottom: 10px; }
 
+.home_slider_fluid {
+  position: relative;
+  padding: 5px 5px 16px 7px; }
+  .home_slider_fluid:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: calc(100% - 41px);
+    background-color: #fff;
+    border-radius: 16px;
+    z-index: -1; }
+  .home_slider_fluid .casino_list_button {
+    display: flex;
+    justify-content: center; }
+  .home_slider_fluid .casino_text {
+    padding: 0 36px;
+    text-align: center;
+    margin: 12px 0; }
+    .home_slider_fluid .casino_text * {
+      color: #2C3E50;
+      font-size: 16px; }
+
 .main_section {
   width: 100%;
   height: 635px;
@@ -172,7 +197,7 @@ body.overflow {
       color: #2C3E50;
       opacity: 0.6; }
   .main_section .home_slider {
-    max-width: 700px;
+    max-width: 1100px;
     margin: 0 auto;
     overflow: hidden;
     /*.slick-current + .slick-active{
@@ -186,22 +211,35 @@ body.overflow {
         transform: scale(1.25);
     }*/ }
     .main_section .home_slider .home_slider_item {
-      padding: 27px 0 10px;
+      /*padding: 27px 0 10px;*/
       transition: all .4s;
       /*opacity: 0.3;
       transform: scale(0.7);*/ }
       .main_section .home_slider .home_slider_item .home_slide_item_wrapper {
-        width: 180px;
-        flex: 0 0 180px;
-        height: 180px;
+        width: 140px;
+        flex: 0 0 140px;
+        height: 140px;
         background-color: #DF0E14;
         border-radius: 50%;
         margin: 0 auto;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
+        position: relative;
+        border: 10px solid #fff;
         position: relative; }
+        .main_section .home_slider .home_slider_item .home_slide_item_wrapper:after {
+          content: "";
+          width: 140px;
+          height: 140px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 1;
+          border: 1px solid #E5E5E5;
+          border-radius: 50%;
+          transform: translate(-50%, -50%); }
         .main_section .home_slider .home_slider_item .home_slide_item_wrapper .casino_list_button {
           position: absolute;
           bottom: 0; }
@@ -222,9 +260,9 @@ body.overflow {
           display: flex;
           align-items: center; }
           .main_section .home_slider .home_slider_item .home_slide_item_wrapper .item_title_cont svg {
-            width: 30px;
-            height: 30px;
-            margin-right: 2px; }
+            width: 35px;
+            height: 35px;
+            object-fit: contain; }
           .main_section .home_slider .home_slider_item .home_slide_item_wrapper .item_title_cont .item_title {
             text-align: center; }
             .main_section .home_slider .home_slider_item .home_slide_item_wrapper .item_title_cont .item_title span:first-child {
@@ -245,11 +283,12 @@ body.overflow {
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
-  top: -20px;
-  right: 4px;
+  top: -2px;
+  right: -27px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 10; }
   .top_star:after {
     background-image: url("../images/lines.svg");
     position: absolute;
@@ -1410,16 +1449,17 @@ textarea {
   align-items: center;
   margin: 0px;
   transition: all 0.3s ease;
-  opacity: 0.3;
-  transform: scale(0.7); }
-  .swiper-slide .top_star {
-    transition: all .3s;
-    opacity: 0; }
+  /*opacity: 0.3;*/
+  /*transform: scale(0.7);*/
+  /*	.top_star {
+  		transition: all .3s;
+  		opacity: 0;
+  	}*/ }
 
 .swiper-slide.swiper-slide-active {
   color: #fff;
   /*background: linear-gradient(45deg, #f69259, #f16975);*/
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
   z-index: 2;
   opacity: 1; }
   .swiper-slide.swiper-slide-active .top_star {
@@ -1446,6 +1486,7 @@ textarea {
   background: linear-gradient(45deg, #f69259, #f16975); }
 
 .swiper_progress_bar {
+  display: none;
   width: 200px;
   margin: 0 auto;
   height: 2px;
@@ -1905,6 +1946,10 @@ textarea {
   .games_fluid {
     margin-top: 50px; } }
 @media screen and (max-width: 992px) {
+  .main_section .home_slider {
+    max-width: 90%;
+    margin: 0 auto; }
+
   .games_fluid:after {
     content: "";
     position: absolute;
@@ -2622,6 +2667,9 @@ textarea {
       content: "";
       width: 187%; } }
 @media screen and (max-width: 350px) {
+  .home_slider_fluid .casino_text {
+    padding: 0 23px; }
+
   .casino_list_container .casino_list_logo {
     width: 100%; } }
 .review_container input, .review_container textarea {

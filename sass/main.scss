@@ -373,13 +373,18 @@ body.overflow {
 			.item_title_cont {
 				display: flex;
 			    align-items: center;
-				
-				svg {
-					width: 35px;
-					height: 35px;
-					object-fit: contain;
-				}
+			    justify-content: center;
+			    max-width: 55%;
+   				 max-height: 45%;
 
+			    img,svg {
+			        object-fit: contain;
+				    max-width: 100%;
+				    max-height: 100%;
+				    border-radius: 10px;
+			    }
+				
+				
 				
 
 			    .item_title {
@@ -413,7 +418,7 @@ body.overflow {
     	background-color: #fff;
     	position: absolute;
     	top: -2px;
-    	right: -27px;
+    	right: -32px;
     	display: flex;
     	align-items: center;
     	justify-content: center;

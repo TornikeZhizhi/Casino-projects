@@ -207,7 +207,9 @@ body.overflow {
     margin-bottom: 10px;
 	}
 }
-
+.main_logo {
+	padding-left: 30px;
+}
 .home_slider_fluid {
 	position: relative;
 	padding: 5px 5px 16px 7px;
@@ -681,6 +683,7 @@ body.overflow {
 		 .bold_title {
 		 	font-size: 32px;
 		 	font-weight: bold;
+		 	font-family: 'Kanit';
 		 }
 	}
 .casino_list_links {
@@ -2332,7 +2335,7 @@ textarea {
 	.casino_inner_main_logo {
 		width: 230px;
 		height: 230px;
-		border: 30px solid #fff;
+		border: 20px solid #fff;
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
@@ -2939,6 +2942,10 @@ textarea {
 
 
 @media screen and (max-width: 992px) {
+
+	.main_logo {
+		padding-left: 20px;
+	}
 
 
 .main_section .home_slider {
@@ -3567,10 +3574,12 @@ textarea {
 .header .header_right .language_bar .language_title {
 	display: flex;
 }
-
+.long_text_paragraph h1 {
+	line-height: 1.2;
+}
 
 .main_section .main_section_header {
-    max-width: 720px;
+    max-width: 770px;
     margin: 35px auto 25px;
     text-align: center;
 }

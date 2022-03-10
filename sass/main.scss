@@ -324,7 +324,7 @@ body.overflow {
 		    width: 140px;
 		    flex: 0 0 140px;
 		    height: 140px;
-		    background-color: #DF0E14;
+		    background-color: #151922;
 		    border-radius: 50%;
 		    margin: 0 auto;
 		    display: flex;
@@ -2986,7 +2986,8 @@ textarea {
 }
 .body_right_wrapper {
 	position: unset;
-	padding-top: 355px;
+	padding-bottom: 30px;
+	
 }
 .body_right {
 	    flex: 0 0 100%;
@@ -3031,6 +3032,7 @@ textarea {
 .casino_inner_fluid {
 	background-color: #F4F4F4;
 	padding-bottom: 40px;
+	padding-top: 355px;
 }
 
 .list_fluid,.review_fluid,.user_reviews_fluid  {
